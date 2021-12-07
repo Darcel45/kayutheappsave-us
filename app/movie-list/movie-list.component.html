@@ -1,0 +1,36 @@
+  <div><img src="https://raw.githubusercontent.com/Darcel45/KAYU/master/logo-Kayu.png">The app save us!</div>
+  
+
+
+<div>
+
+<h4>{{appName}} 
+ <a href="https://kayu-scanner-k5v7jc.stackblitz.io">*ICI*</a>
+       </h4>
+
+
+  <button (click)="filterMovies(above9dollars)" >Histogramme </button>
+ <button (click)="filterMovies(below9dollars)" ></button>
+  
+ <a href="https://ngx-tableau-dechets-plastiques-par-elimination.stackblitz.io">Fiche globale</a>
+
+    <button (click)="filterMovies(below9dollars)" ></button>
+  
+  <ul *ngFor="let movie of filtredMovies">
+
+    
+  <li>
+        <span class="movie-id">{{movie.id}}</span>
+        <p class="movie-name" (click)="onSelectedMovie(movie)">
+    {{movie.movie_name}}
+        </p>
+    </li>
+
+
+
+
+</ul>
+
+<app-movie-details [movie]="selectedMovie"></app-movie-details>
+</div>
+

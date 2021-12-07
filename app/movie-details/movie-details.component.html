@@ -1,0 +1,42 @@
+<div class="movie-wrapper" *ngIf="movie">
+<div class="movie-poster">
+  <img  class="thumbnail" [src]="movie.movie_poster" />
+</div>
+
+<div class="movie-details">
+  <h1>  {{movie.movie_name}}</h1>
+  
+    <table>
+      <tr>
+        
+        <td><a href="https://ngx-tableau-b-ready.stackblitz.io">Détails 1 </a></td> 
+        
+        <td><a href="https://ngx-tableau-ehtdm5.stackblitz.io">Détails 2 </a></td> 
+        
+
+
+      </tr>
+
+
+    </table>
+</div>
+
+</div>
+
+<!--   pour les valeur du tableai 
+
+<th>Origin</th>
+        <th>Price</th>
+        <th>Release date</th>
+      </tr>
+      
+          <tr>
+        <td>USA:</td>
+        <td>{{movie.price | currency:'USD'}}</td>
+        <td>{{movie.movie_date | date:'MM/dd/yyyy' }}         </td>
+      </tr>
+
+          <tr>
+        <td>FR:</td>
+        <td>{{movie.getILSprice() | currency:'€'}}          </td>
+        <td>{{movie.movie_date | date:'dd/MM/yyyy'}}          </td> -->
